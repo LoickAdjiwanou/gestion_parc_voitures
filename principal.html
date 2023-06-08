@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" lang=fr/>
+    <title>Gestion Voitures</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <center>
+        <p class="titre"><font size="6px"><strong>GESTION STOCK VOITURES</strong></font></p>
+        <ul class="haut">
+            <li><a href="affichage.php">Liste Voitures</a></li>
+            <li><a href="recherche.php">Rechercher</a></li>
+            <li><a href="bénéfice.php">Bénéfices</a></li>
+            <li><a href="clients.php">Clients</a></li>
+        </ul>
+    </center>
+    
+    <br/><br/>
+    <center class="page">
+        <form method="post" class="formulaire1" action="voiture.php">
+            <p class="voiture"><strong>Enregistrer une voiture</strong></p><br/>
+            <p>
+                <label for="numSerie">Numéro de Série</label>
+                <input type="text" name="numSerie" id="numSerie" required="required"/><br/><br/>
+                <label for="marque">Marque</label>
+                <input type="text" name="marque" id="marque" required="required"/><br/><br/>
+                <label for="modele">Modèle</label>
+                <input type="text" name="modele" id="modele" required="required"/><br/><br/>
+                <label for="couleur">Couleur</label>
+                <input type="text" name="couleur" id="couleur" required="required"/><br/><br/>
+                <label for="prixAchat">Prix Achat</label>
+                <input type="number" name="prixAchat" id="prixAchat" required="required"/><br><br/>
+                <label for="prixVente">Prix Vente</label>
+                <input type="number" name="prixVente" id="prixVente" required="required"/><br><br>
+                <input type="submit" value="Enregistrer"/><br/>
+            </p> 
+        </form>
+
+        <form method="post" class="formulaire2" action="vente.php">
+            <p class="voiture"><strong>Enregistrer une vente</strong></p><br/>
+            <p>
+                <label for="idVente">Id de la Vente</label>
+                <input type="text" name="idVente" id="idVente" required="required"/><br><br>
+                <label for="dateVente">Date de la Vente</label>
+                <input type="text" name="dateVente" id="dateVente" required="required"/><br><br>
+                <label for="prix">Prix</label>
+                <input type="number" name="prix" id="prix" required="required"/><br/><br>
+                <input type="submit" value="Enregistrer"/><br/>
+            </p>
+        </form>
+
+        <form method="post" class="formulaire3" action="client.php">
+            <p class="client"><strong>Enregistrer un client</strong></p><br/>
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" required="required"/><br/><br/>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required="required"/><br/><br/>
+                <label for="telephone">Téléphone</label>
+                <input type="text" name="telephone" id="telephone" required="required"/><br/><br/>
+                <input type="submit" value="Enregistrer"/><br/>
+            </p>
+        </form>
+
+        <form method="post" class="formulaire4" action="caissier.php">
+            <p class="caissier"><strong>Enregistrer un caissier</strong></p><br/>
+            <p>
+                <label for="nomCaissier">Nom</label>
+                <input type="text" name="nomCaissier" id="nomCaissier" required="required"/><br/><br/>
+                <input type="submit" value="Enregistrer"/><br/>
+            </p>
+        </form>
+    </center>
+</body>
+</html>
